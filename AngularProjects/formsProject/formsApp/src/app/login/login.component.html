@@ -1,0 +1,30 @@
+<div class="w-100 vh-100 d-flex align-items-center justify-content-center mb-4">
+    <div class="p-4 card w-50">
+        <h1>Login</h1>
+        <form class="d-flex flex-column mt-2" (ngSubmit)="handleSubmit($event)">
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" name="email" email [(ngModel)]="userDetails.userEmail" id="email" placeholder="name@example.com" required #userEmail="ngModel"/>
+                <div *ngIf="userEmail.invalid && userEmail.touched" class="alert alert-danger mt-3">
+                    <div *ngIf="userEmail.errors?.['required']">Email Id is Required</div>
+                    <div *ngIf="userEmail.errors?.['email']">Email Id should be of the format user&#64;example.com</div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" minlength="8" type="password" name="password" id="password" required [(ngModel)]="userDetails.userPassword" #userPassword="ngModel"/>
+                <div *ngIf="userPassword.invalid && userPassword.touched" class="alert alert-danger mt-3">
+                    <div *ngIf="userPassword.errors?.['required']">Password is Required</div>
+                    <div *ngIf="userPassword.errors?.['minlength']">Password should be of minimum length 8</div>
+                </div>
+            </div>
+            <input *ngIf="userEmail.invalid || userPassword.invalid" disabled class="btn btn-primary mb-3" type="submit" value="Submit">
+            <input *ngIf="userEmail.invalid==false && userPassword.invalid ==false" class="btn btn-primary mb-3" type="submit" value="Submit">
+        </form>
+        <div class="d-flex justify-content-between">
+            <p>Don't Have an Account? <a href="#">Sign Up</a></p>
+            <p><a href="#">Forgot Password</a></p>
+        </div>
+    </div>
+</div>

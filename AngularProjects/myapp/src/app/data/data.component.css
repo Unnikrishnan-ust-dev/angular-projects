@@ -1,0 +1,79 @@
+/* Container Section */
+/* div{
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+.section-container{
+    background-color: beige;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+} */
+/* Filters Section */
+/* .filter-container{
+    display: flex;
+    padding-right: 30px;
+    flex-direction: column;
+    border-right: 1px solid black;
+    width: 25%;
+}
+select{
+    margin: 10px 10px;
+    padding: 10px;
+    border: 2px solid #9d00ff;
+    outline: none;
+}
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #9d00ff;
+    outline: none;
+}
+option{
+    padding: 10px;
+} */
+
+/* Cards Section */
+/* .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+.card{
+    box-shadow: 1px 2px 12px 2px black;
+    background-color: #fff;
+    width: 25%;
+    margin: 10px;
+}
+.add-to-cart{
+    background-color: blueviolet;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+} */
+/* Initial Info Section */
+/* .initial-info-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+} */
+/* General Section */
+/* .btn{
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+} */

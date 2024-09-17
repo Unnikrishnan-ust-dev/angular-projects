@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="list-style: none;">
+                    <img src="ust.png" alt="ust" width="70">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h1 id="top" style="text-align: center;">Types of Tags in HTML</h1>
+        <button><a href="#bottom">Goto Bottom</a></button>
+        <table border="2" class="main">
+            <tr>
+                <td colspan="5" style="text-align: center;">
+                    <h1>Table of Contents</h1>
+                    <ul>
+                        <li>
+                            <a href="#general-tags">General Classification</a>
+                        </li>
+                        <li>
+                            <a href="#text-modification">Text Modification Tags</a>
+                        </li>
+                        <li>
+                            <a href="#lists">Lists</a>
+                        </li>
+                        <li>
+                            <a href="#media">Media Tags</a>
+                        </li>
+                        <li>
+                            <a href="#container">Container Tags</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="general-tags">
+                <td colspan="5" style="text-align: center;">
+                    <h1>General Classification</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Container Tags which dont have their own content <ul>
+                        <li>div</li>
+                        <li>main</li>
+                        <li>aside</li>
+                        <li>header</li>
+                        <li>footer</li>
+                    </ul>
+                </td>
+                <td>Standalone tags which need not be closed <ul>
+                        <li>img</li>
+                        <li>audio</li>
+                        <li>br</li>
+                    </ul>
+                </td>
+                <td>Content tags which must be open and closed the content is entered between opening and closing Tags
+                    <ul>
+                        <li>h</li>
+                        <li>p</li>
+                        <li>b</li>
+                        <li>i</li>
+                        <li>u</li>
+                    </ul>
+                </td>
+                <td>Parent and child tags
+                    <ul>
+                        <li>table, tr, td</li>
+                        <li>ul, li</li>
+                        <li>video,source</li>
+                    </ul>
+                </td>
+                <td>Tags have attributes
+                    <ul>
+                        <li>img - src,width,height</li>
+                        <li>video - controls,loop,autoplay</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr id="text-modification">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Text Modification Tags</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Heading Tags -
+                    h1 to h6 -
+                    <table border="2" style="width: 100%;text-align: center;">
+                        <tr>
+                            <td>
+                                <h1>h1</h1>
+                            </td>
+                            <td>
+                                <h2>h2</h2>
+                            </td>
+                            <td>
+                                <h3>h3</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>h4</h4>
+                            </td>
+                            <td>
+                                <h5>h5</h5>
+                            </td>
+                            <td>
+                                <h6>h6</h6>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    Text formatting tags -
+                    <table border="2">
+                        <tr>
+                            <td>
+                                &lt;b&gt;&lt;/b&gt;
+                            </td>
+                            <td>
+                                <b>bold</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&lt;i&gt;&lt;/i&gt;</td>
+                            <td><i>italics</i></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;u&gt;&lt;/u&gt;</td>
+                            <td><u>underline</u></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;strike&gt;&lt;/strike&gt;</td>
+                            <td><strike>strikethrough</strike></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;sup&gt;&lt;/sup&gt;</td>
+                            <td>X<sup>superscript</sup></td>
+                        </tr>
+                        <tr>
+                            <td>&lt;sub&gt;&lt;/sub&gt;</td>
+                            <td>X<sub>subscript</sub></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    Punctuation tags
+                    <table border="2">
+                        <tr>
+                            <td>&lt;q&gt;&lt;/q&gt;</td>
+                            <td><q>I am a trillioanaire</q></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    Paragraph tags
+                    <table border="2">
+                        <tr>
+                            <td>&lt;p&gt;&lt;/p&gt;</td>
+                            <td>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="2">
+                        <tr>
+                            <td>&lt;a&gt;&lt;/a&gt;</td>
+                            <td><a href="https://google.com">Click to go</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="lists">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Lists</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol type="1">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="A">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="a">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="I">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol type="i">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ul type="circle">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul type="square">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul type="disc">
+                        <li>Hello1</li>
+                        <li>Hello2</li>
+                        <li>Hello3</li>
+                        <li>Hello4</li>
+                        <li>Hello5</li>
+                    </ul>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="media">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Media Tags</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">
+                    <h1>In HTML5, there are several multimedia tags that can be used to embed different types of media,
+                        such
+                        as audio and video, into web pages. </h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Image Tag</h1>
+                    <table>
+                        <tr>
+                            <td>&lt;img src="img.jpg" alt="image" width="100"/&gt;</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img.jpg" alt="image" width="100"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <h1>Video Tag</h1>
+                    <table>
+                        <tr>
+                            <td>&lt;video &gt;&lt;/video &gt;</td>
+                        </tr>
+                        <tr>
+                            <td><video controls autoplay="true" loop width="200" poster="dog.jpg">
+                                    <source src="video.mp4" type="video/mp4">
+                                </video></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <h1>Audio Tag</h1>
+                    &lt;audio src="" autoplay/&gt;
+                </td>
+                <td>
+                    <h1>Iframe Tag</h1>
+                    &lt;iframe src="index.html" frameborder="0" width="100%"&gt;
+                    &lt;/iframe&gt;
+                    <iframe src="index.html" frameborder="0" width="100%"></iframe>
+                </td>
+                <td>
+                    <h1>Figure Tag</h1>
+                    <figure>
+                        <img src="dog.jpg" alt="image" width="200">
+                        <figcaption>My First Image</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr id="container">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Container Tags</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <ol>
+                        <li>
+                            <h4>Header</h4> — defines a header for the document or a section that’s typically at the top
+                            of the page
+                            and meant to be introductory, which might contain heading elements, a logo, a search form,
+                            etc.
+                        </li>
+                        <li>
+                            <h4>Footer</h4> — defines a footer for the document or a section, which might contain author
+                            information,
+                            links to related pages, etc.
+                        </li>
+                        <li>
+                            <h4>Nav</h4> — defines a set of navigation links in the document. Commonly used for menus,
+                            tables of
+                            content, and indexes
+                        </li>
+                        <li>
+                            <h4>Main</h4> — defines the main content of the document. The Main element should not
+                            contain repeated
+                            content like navigation links, site logos, search forms, etc.
+                        </li>
+                        <li>
+                            <h4>Section</h4> — defines a section of the document that groups content with similar themes
+                            together.
+                            Webflow’s section element has a Section HTML5 tag by default.
+                        </li>
+                        <li>
+                            <h4>Article</h4> — defines a stand-alone composition on a page, like a forum post, newspaper
+                            article, or
+                            blog post
+                        </li>
+                        <li>
+                            <h4>Aside</h4> — defines content aside from the page content, like a sidebar or a call-out
+                        </li>
+                        <li>
+                            <h4>Address</h4> — defines the contact information for the author/owner of a document or an
+                            article‍
+                        </li>
+                        <li>
+                            <h4>Figure</h4> — defines self-contained content (e.g., illustrations, diagrams, photos,
+                            code blocks,
+                            etc.)
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Div Tag</h4>
+                    <div class="container">
+                        <div>
+                            <h1>Div 1</h1>
+                            <h1>Div 2</h1>
+                            <h1>Div 3</h1>
+                        </div>
+                        <div>
+                            <h1>Div 1</h1>
+                            <h1>Div 2</h1>
+                            <h1>Div 3</h1>
+                        </div>
+                        <div>
+                            <h1>Div 1</h1>
+                            <h1>Div 2</h1>
+                            <h1>Div 3</h1>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <h4>Span Tag</h4>
+                    <span class="container">
+                        <span>
+                            <h1>Span 1</h1>
+                            <h1>Span 2</h1>
+                            <h1>Span 3</h1>
+                        </span>
+                        <span>
+                            <h1>Span 1</h1>
+                            <h1>Span 2</h1>
+                            <h1>Span 3</h1>
+                        </span>
+                        <span>
+                            <h1>Span 1</h1>
+                            <h1>Span 2</h1>
+                            <h1>Span 3</h1>
+                        </span>
+                    </span>
+                </td>
+                <td>
+                    <h4>Header,Nav,Ul,Li</h4>
+                    <header>
+                        <nav>
+                            <ul>
+                                <li><a href="http://">Click me</a></li>
+                                <li><a href="http://">Click me</a></li>
+                                <li><a href="http://">Click me</a></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </td>
+                <td>
+                    <h4>Main,Section,Article,P</h4>
+                    <main>
+                        <section>
+                            <article>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, unde.</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <p>Harum accusantium architecto fugiat iusto et ratione sed quis asperiores!</p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <p>Corporis reprehenderit architecto ipsa accusantium laudantium inventore officiis
+                                    repellat
+                                    nostrum?</p>
+                            </article>
+                        </section>
+                    </main>
+                </td>
+                <td>
+                    <header>
+                        <h4>(Nav,Ul,Li)(Main,Section,Article,p,Aside)</h4>
+                        <nav>
+                            <ul>
+                                <li>click1</li>
+                                <li>click2</li>
+                                <li>click3</li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <main>
+                        <section>
+                            <article>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, ullam.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Cum fuga quibusdam aut dicta aliquam facilis voluptas illo quisquam.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Perferendis, architecto! Fugiat tempore suscipit laborum ipsam beatae natus quidem.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, illo.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Quibusdam soluta aliquam fugit alias minus voluptatem dolorum odit ea.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Delectus velit veritatis nemo necessitatibus odio repellat laudantium, fugit
+                                    voluptas?
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                        </section>
+                        <section>
+                            <article>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, iusto.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Quod quaerat nesciunt cupiditate magni aspernatur expedita ex? Officiis, suscipit.
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                            <article>
+                                <p>
+                                    Vel, hic architecto quas laborum fugit magni asperiores laudantium atque!
+                                <aside>Hello1</aside>
+                                <aside>Hello2</aside>
+                                </p>
+                            </article>
+                        </section>
+                    </main>
+                    <aside>
+                        <h4>Aside Element</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consequatur.</p>
+                    </aside>
+                    <footer>
+                        <section>
+                            <ul>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <ul>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <ul>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                                <li>Links</li>
+                            </ul>
+                        </section>
+                    </footer>
+                </td>
+            </tr>
+            <tr id="">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Input Tags</h1>
+                </td>
+            </tr>
+            <form action="" method="post">
+            <tr>
+                <td>
+                    <h1>Input Type Date</h1>
+                    <label for="dateinput">Enter Birth Date</label>
+                    <input type="date" name="date" id="dateinput">
+                </td>
+                <td>
+                    <h1>Input Type Time</h1>
+                    <label for="timeinput">Enter Wake Up Time</label>
+                    <input type="time" name="time" id="timeinput">
+                </td>
+                <td>
+                    <h1>Input Type Text</h1>
+                    <label for="fnameinput">Enter Your Name</label>
+                    <input type="text" name="fname" id="fnameinput" placeholder="Enter your name">
+                </td>
+                <td>
+                    <h1>Input Type Number</h1>
+                    <label for="ageinput">Enter Your Age</label>
+                    <input type="number" name="age" id="ageinput" min="18" max="60" placeholder="age">
+                </td>
+                <td>
+                    <h1>Input Type Email</h1>
+                    <label for="emailinput">Enter Your Email</label>
+                    <input type="email" name="email" id="emailinput" placeholder="Enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Input Type Color</h1>
+                    <label for="colorinput">Pick a Color</label>
+                    <input type="color" name="color" id="colorinput">
+                </td>
+                <td>
+                    <h1>Input Type Range</h1>
+                    <label for="rangeinput">Select From a Range</label>
+                    <input type="range" name="range" id="rangeinput" min="1" max="100">
+                </td>
+                <td>
+                    <h1>Input Type Search</h1>
+                    <label for="searchinput">Do a Search</label>
+                    <input type="search" name="search" id="searchinput" placeholder="Search....">
+                </td>
+                <td>
+                    <h1>Input Type CheckBox</h1>
+                    <label for="checkboxinput">Select It</label>
+                    <input type="checkbox" name="check" id="checkinput">
+                </td>
+                <td>
+                    <h1>Input Type Radio</h1>
+                    <label for="radioinput">Click This</label>
+                    <input type="radio" name="radio" id="radioinput">
+                    <label for="radioinput">Or This</label>
+                    <input type="radio" name="radio" id="radioinput">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Input Type File</h1>
+                    <label for="fileinput">Upload Any file</label>
+                    <input type="file" name="file" id="fileinput">
+                </td>
+                <td>
+                    <h1>Input Type Button</h1>
+                    <label for="Buttoninput">Click This</label>
+                    <input type="button" name="Button" id="Buttoninput" value="Click">
+                </td>
+                <td>
+                    <h1>Input Type Image</h1>
+                    <input type="image" name="fname" id="fnameinput" src="dog.jpg" width="50">
+                </td>
+                <td>
+                    <h1>Input Type Password</h1>
+                    <label for="passwordinput">Enter Your Password</label>
+                    <input type="password" name="password" id="passwordinput" placeholder="password">
+                </td>
+                <td>
+                    <h1>Input Type Tel</h1>
+                    <label for="telinput">Enter Your Phone</label>
+                    <input type="tel" name="tel" id="telinput" placeholder="Enter your Phone">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Input Type Month</h1>
+                    <label for="monthinput">Enter Birth Month</label>
+                    <input type="month" name="month" id="monthinput">
+                </td>
+                <td>
+                    <h1>Input Type URL</h1>
+                    <label for="URLinput">Enter Wake Up URL</label>
+                    <input type="url" name="URL" id="URLinput">
+                </td>
+                <td>
+                    <h1>Input Type Week</h1>
+                    <label for="weekinput">Enter Your Week</label>
+                    <input type="week" name="week" id="weekinput" placeholder="Enter your week">
+                </td>
+                <td>
+                    <h1>Input Type DropDown</h1>
+                    <label for="deptinput">Select your Choice</label>
+                    <Select id="deptinput">
+                        <Option>CS</Option>
+                        <Option>Mech</Option>
+                        <Option>EC</Option>
+                        <Option>EEE</Option>
+                        <Option>Robotics</Option>
+                    </Select>
+                </td>
+                <td>
+                    <h1>Input Type Submit</h1>
+                    <input type="submit"> 
+                </td>
+            </tr>
+            </form>
+            
+            <tr id="container">
+                <td colspan="5" style="text-align: center;">
+                    <h1>Reference of All Tags</h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    !DOCTYPE html
+                    html
+                    head
+                    title
+                    meta
+                    link
+                    style
+                    script
+                    body
+                    header
+                    nav
+                    main
+                    section
+                    article
+                    aside
+                    footer
+                    h1
+                    h2
+                    h3
+                    h4
+                    h5
+                    h6
+                    p
+                    br
+                    hr
+                    pre
+                    blockquote
+                    ol
+                    ul
+                    li
+                    dl
+                    dt
+                    dd
+                    a
+                    img
+                    figure
+                    figcaption
+                    table
+                    caption
+                    thead
+                    tbody
+                    tr
+                    th
+                    td
+                    form
+                    input
+                    textarea
+                    button
+                    select
+                    option
+                    label
+                    fieldset
+                    legend
+                    iframe
+                    embed
+                    object
+                    param
+                    audio
+                    video
+                    source
+                    track
+                    canvas
+                    svg
+                    path
+                    circle
+                    rect
+                    line
+                    polygon
+                    g
+                    defs
+                    use
+                    clipPath
+                    mask
+                    linearGradient
+                    radialGradient
+                    stop
+                    animate
+                    animateTransform
+                    animateMotion
+                    noscript
+                    template
+                    slot
+                    dialog
+                    details
+                    summary
+                    data
+                    output
+                    progress
+                    meter
+                    datalist
+                    keygen
+                    base
+                </td>
+            </tr>
+            <caption>Types of Tags in HTML</caption>
+        </table>
+        <button id="bottom"><a href="#top">Goto Top</a></button>
+    </main>
+    <hr>
+
+    <footer>
+        <div>
+            <img src="ust.png" alt="ust" width="100">
+        </div>
+        <p style="text-align: center;">&copy; UST @2024</p>
+    </footer>
+</body>
+
+</html>

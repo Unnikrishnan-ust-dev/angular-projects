@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box !important;
+    /* border: 1px solid red !important; */
+}
+body{
+    margin: 10px !important;
+}
+.logo-img{
+    
+}
+a{
+    text-decoration: none !important;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1></h1>
+    <form action="#" method="post" onsubmit="handleSubmit(event)">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <script defer src="formhandling.js"></script>
+</body>
+</html>

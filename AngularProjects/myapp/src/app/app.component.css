@@ -1,0 +1,13 @@
+h1{
+    font-size: 50px;
+}
+
+select{
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #9d00ff;
+    outline: none;
+}
+option{
+    padding: 10px;
+}

@@ -1,0 +1,50 @@
+<div class="w-100 min-vh-100 mb-4 mt-4 d-flex align-items-center justify-content-center">
+    <div class="card w-50 p-4">
+        <h1>FormBuilder Create Product</h1>
+        <form class="d-grid mt-2 form-group" [formGroup]="productForm" (ngSubmit)="handleSubmit()">
+            <div class="mb-3">
+                <label for="productId" class="form-label">Product Id</label>
+                <input type="text" id="productId" class="form-control" name="productId" required
+                    formControlName="productId">
+            </div>
+            <div class="mb-3" formGroupName="description">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" id="age" class="form-control" name="age" required formControlName="age">
+                <label for="seasons" class="form-label">Seasons</label>
+                <input type="text" id="seasons" class="form-control" name="seasons" required formControlName="seasons">
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Product Quantity</label>
+                <input type="number" id="quantity" class="form-control" name="quantity" required
+                    formControlName="quantity">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Product Price</label>
+                <input type="number" id="price" class="form-control" name="price" required
+                    formControlName="price">
+            </div>
+
+            <div class="mb-3">
+                <label for="brand" class="form-label">Product Brand</label>
+                <input type="text" id="brand" class="form-control" name="brand" required formControlName="brand">
+            </div>
+
+            <div class="mb-3" formArrayName="suppliers">
+                <div class="border rounded p-3">
+                    <button type="button" class="btn btn-info ml-3" (click)="addNewSupplier()">Add New Supplier</button>
+                    
+                    <div *ngFor="let supplier of productForm.controls.suppliers.controls;let i = index">
+                        <label for="supplier" class="form-label">Product Supplier</label>
+                        <input type="text" id="supplier" class="form-control" name="supplier" required [formControlName]="i">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" id="ppublish" class="form-check-input me-1" name="productPublish">
+                <label for="ppublish" class="form-check-label">Publish or Draft</label>
+            </div>
+            <input type="submit" value="Submit" [disabled]="!productForm.valid" class="btn btn-primary mb-3">
+        </form>
+    </div>
+</div>

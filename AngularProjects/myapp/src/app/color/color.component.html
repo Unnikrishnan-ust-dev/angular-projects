@@ -1,0 +1,10 @@
+<div [style.background-color]="color" [style.color]="color=='white'?'black':'white'">
+    <p>Color Works!</p>
+    <label for="color">Red</label>
+    <input [(ngModel)]="color" type="radio" id="color" value="red">
+    <label for="color">Blue</label>
+    <input [(ngModel)]="color" type="radio" id="color" value="blue">
+    <label for="color">Reset</label>
+    <input [(ngModel)]="color" type="radio" id="color" value="white">
+    <button (click)="emitColor()">Change Parent Color</button>
+</div>

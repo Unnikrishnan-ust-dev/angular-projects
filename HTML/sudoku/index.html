@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 style="text-align: center;margin: 30px;">Sudoku Game</h1>
+
+        <div class="container">
+            <div class="startContainer">
+                <button id="startBtn" onclick="startGame()">Start</button>
+            </div>
+            <div id="cell1" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell2" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell3" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell4" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell5" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell6" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell7" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell8" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+            <div id="cell9" class="outer-cell">
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+                <div class="inner-cell"><input type="number"></div>
+            </div>
+        </div>
+
+
+
+        <button class="btn" onclick="submitGame()">Submit</button>
+
+        <button class="resetbtn" onclick="resetGame()">Reset</button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

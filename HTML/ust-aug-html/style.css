@@ -1,0 +1,15 @@
+td,tr{
+  padding: 10px;
+  /* text-align: center; */
+  width: 100%;
+}
+table{
+  border-radius: 10px;
+  padding: 5px;
+}
+li{
+  text-align: left;
+}
+caption{
+  caption-side: bottom;
+}
