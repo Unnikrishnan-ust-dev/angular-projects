@@ -1,7 +1,0 @@
-main{
-    scroll-snap-type: y mandatory;
-}
-
-main > div{
-    scroll-snap-align: start;
-}
